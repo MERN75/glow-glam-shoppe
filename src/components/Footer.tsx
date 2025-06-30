@@ -10,10 +10,10 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <h3 className="font-playfair text-3xl font-bold text-rose-gold mb-4">
-              GlowGlam
+              Glamistry
             </h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Your beauty bestie for premium makeup products. Glow up with glam and feel beautiful inside and out.
+              Where beauty meets comfort. We believe in affordable elegance and helping you express your unique style with confidence.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-rose-gold/20 rounded-full flex items-center justify-center hover:bg-rose-gold transition-colors">
@@ -63,16 +63,17 @@ const Footer = () => {
               Contact Us
             </h4>
             <div className="space-y-2 text-gray-300">
-              <p>📧 support@glowglam.in</p>
-              <p>📞 +91 98765 43210</p>
-              <p>📍 Mumbai, India</p>
+              <p>📧 *****</p>
+              <p>📞 *****</p>
+              <p>📍 *****</p>
+              <p>📲 *****</p>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-600 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2025 GlowGlam. All rights reserved. Made with 💕 for beauty lovers.
+            © 2025 Glamistry. All rights reserved. Made with 💕 for beauty lovers.
           </p>
         </div>
       </div>

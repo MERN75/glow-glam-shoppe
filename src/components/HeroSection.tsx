@@ -8,11 +8,11 @@ const HeroSection = () => {
             {/* Text Content */}
             <div className="text-center md:text-left animate-fade-in">
               <h1 className="font-playfair text-5xl md:text-7xl font-bold text-deep-plum mb-6 leading-tight">
-                Glow Up with{' '}
-                <span className="text-rose-gold">Glam!</span>
+                Beauty Meets{' '}
+                <span className="text-rose-gold">Comfort</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-                Explore luxurious beauty products made just for you.
+                Affordable elegance that brings out your natural glow. Whether bold or simple, we match your vibe.
               </p>
               <button className="btn-primary text-lg px-8 py-4 animate-glow">
                 Shop Now

@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ShoppingCart } from 'lucide-react';
+import { ShoppingCart, Search } from 'lucide-react';
 
 interface NavigationProps {
   cartCount?: number;
@@ -16,7 +16,7 @@ const Navigation = ({ cartCount = 0 }: NavigationProps) => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link to="/" className="font-playfair text-3xl font-bold text-deep-plum">
-            GlowGlam
+            Glamistry
           </Link>
 
           {/* Desktop Navigation */}
