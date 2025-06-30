@@ -8,14 +8,14 @@ const HeroSection = () => {
             {/* Text Content */}
             <div className="text-center md:text-left animate-fade-in">
               <h1 className="font-playfair text-5xl md:text-7xl font-bold text-deep-plum mb-6 leading-tight">
-                Beauty Meets{' '}
-                <span className="text-rose-gold">Comfort</span>
+                Glow, Bloom,{' '}
+                <span className="text-rose-gold">Blush</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-                Affordable elegance that brings out your natural glow. Whether bold or simple, we match your vibe.
+                Elegant, affordable makeup boutique. Handpicked products that reflect your natural glow with boutique-level charm.
               </p>
               <button className="btn-primary text-lg px-8 py-4 animate-glow">
-                Shop Now
+                Shop Rosélush
               </button>
             </div>
 
@@ -24,7 +24,7 @@ const HeroSection = () => {
               <div className="aspect-square bg-gradient-to-br from-rose-gold/30 to-deep-plum/20 rounded-3xl flex items-center justify-center overflow-hidden shadow-2xl">
                 <img 
                   src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
-                  alt="Luxury makeup collection"
+                  alt="Rosélush makeup collection"
                   className="w-full h-full object-cover rounded-3xl hover:scale-105 transition-transform duration-700"
                 />
               </div>

@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import { ArrowUp, Search, ShoppingCart, Eye } from 'lucide-react';
+import { Search, ShoppingCart, Eye } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Products = () => {
@@ -12,65 +12,56 @@ const Products = () => {
   const categories = [
     'All', 
     'Lipsticks', 
-    'Foundations & Base', 
+    'Foundations', 
     'Eyeshadows', 
     'Blush & Highlighters', 
     'Mascara & Eyeliners', 
-    'Makeup Tools', 
+    'Tools & Brushes', 
     'Accessories'
   ];
 
   const products = [
-    // Lipsticks (6 items)
-    { id: 1, name: "Ruby Velvet Matte", category: "Lipsticks", price: "₹399", description: "Long-lasting matte finish with intense color payoff", image: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 2, name: "Rose Gold Gloss", category: "Lipsticks", price: "₹299", description: "Luxurious glossy finish with rose gold shimmer", image: "https://images.unsplash.com/photo-1631214540278-c3d6b6750d0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 3, name: "Berry Bliss Liquid", category: "Lipsticks", price: "₹449", description: "Rich berry shade with comfortable wear", image: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 4, name: "Nude Perfection", category: "Lipsticks", price: "₹359", description: "Perfect nude shade for everyday elegance", image: "https://images.unsplash.com/photo-1631214540278-c3d6b6750d0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 5, name: "Coral Dream Stick", category: "Lipsticks", price: "₹329", description: "Vibrant coral with moisturizing formula", image: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 6, name: "Classic Red Bullet", category: "Lipsticks", price: "₹399", description: "Timeless red shade for bold statements", image: "https://images.unsplash.com/photo-1631214540278-c3d6b6750d0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    // Lipsticks (4 items)
+    { id: 1, name: "Rosé Nude Matte", category: "Lipsticks", price: "₹399", description: "Nude matte finish for everyday elegance", image: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 2, name: "BoldBerry Gloss", category: "Lipsticks", price: "₹449", description: "Glossy berry red for bold statements", image: "https://images.unsplash.com/photo-1631214540278-c3d6b6750d0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 3, name: "Coral Crush Satin", category: "Lipsticks", price: "₹429", description: "Coral peach with satin finish", image: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 4, name: "Mauve Bloom", category: "Lipsticks", price: "₹399", description: "Soft mauve for daily wear", image: "https://images.unsplash.com/photo-1631214540278-c3d6b6750d0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
 
-    // Foundations & Base (5 items)
-    { id: 7, name: "Flawless Coverage Foundation", category: "Foundations & Base", price: "₹799", description: "Full coverage with natural finish", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 8, name: "Hydrating BB Cream", category: "Foundations & Base", price: "₹599", description: "Lightweight coverage with skincare benefits", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 9, name: "Color Correcting Primer", category: "Foundations & Base", price: "₹499", description: "Smooths skin and extends makeup wear", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 10, name: "Setting Powder Compact", category: "Foundations & Base", price: "₹549", description: "Sets makeup with silky finish", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 11, name: "Concealer Duo", category: "Foundations & Base", price: "₹449", description: "High coverage concealer in two shades", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    // Foundations (4 items)
+    { id: 5, name: "Soft Beige Foundation", category: "Foundations", price: "₹599", description: "Light coverage for fair skin tones", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 6, name: "Warm Tan Foundation", category: "Foundations", price: "₹599", description: "Perfect for medium warm undertones", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 7, name: "Golden Glow Foundation", category: "Foundations", price: "₹650", description: "Rich golden tone with natural finish", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 8, name: "Deep Cocoa Foundation", category: "Foundations", price: "₹650", description: "Deep rich coverage for darker skin", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
 
-    // Eyeshadows (6 items)
-    { id: 12, name: "Sunset Dreams Palette", category: "Eyeshadows", price: "₹899", description: "12 warm shades for stunning sunset looks", image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 13, name: "Smokey Night Collection", category: "Eyeshadows", price: "₹799", description: "Deep shades for dramatic evening looks", image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 14, name: "Neutral Essentials", category: "Eyeshadows", price: "₹699", description: "Everyday neutral shades for any occasion", image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 15, name: "Shimmer Singles Duo", category: "Eyeshadows", price: "₹399", description: "Two highly pigmented shimmer shades", image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 16, name: "Matte Magic Quad", category: "Eyeshadows", price: "₹549", description: "Four matte shades for sophisticated looks", image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 17, name: "Glitter Bomb Single", category: "Eyeshadows", price: "₹299", description: "Ultra-sparkly glitter eyeshadow", image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    // Eyeshadows (4 items)
+    { id: 9, name: "Rose Nude Palette", category: "Eyeshadows", price: "₹549", description: "Soft rose and nude shades", image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 10, name: "Smokey Night Palette", category: "Eyeshadows", price: "₹599", description: "Deep smokey shades for evening looks", image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 11, name: "Sunset Glam Palette", category: "Eyeshadows", price: "₹579", description: "Warm sunset-inspired colors", image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 12, name: "Everyday Matte Palette", category: "Eyeshadows", price: "₹479", description: "Essential matte shades for daily wear", image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
 
-    // Blush & Highlighters (5 items)
-    { id: 18, name: "Golden Hour Highlighter", category: "Blush & Highlighters", price: "₹649", description: "Luminous glow for radiant skin", image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 19, name: "Peach Blush Compact", category: "Blush & Highlighters", price: "₹499", description: "Natural peach flush for healthy glow", image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 20, name: "Rose Bloom Blush", category: "Blush & Highlighters", price: "₹449", description: "Romantic rose shade with silky texture", image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 21, name: "Bronzer & Highlight Duo", category: "Blush & Highlighters", price: "₹699", description: "Contour and highlight in one compact", image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 22, name: "Liquid Blush Drops", category: "Blush & Highlighters", price: "₹399", description: "Buildable liquid blush for natural flush", image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    // Blush & Highlighters (4 items)
+    { id: 13, name: "Peach Pop Blush", category: "Blush & Highlighters", price: "₹399", description: "Fresh peach flush for natural glow", image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 14, name: "Rose Beam Blush", category: "Blush & Highlighters", price: "₹429", description: "Romantic rose shade with silky texture", image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 15, name: "Champagne Shine Highlighter", category: "Blush & Highlighters", price: "₹499", description: "Luminous champagne glow", image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 16, name: "Moonlit Glow Combo", category: "Blush & Highlighters", price: "₹599", description: "Blush and highlighter duo set", image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
 
-    // Mascara & Eyeliners (5 items)
-    { id: 23, name: "Volume Max Mascara", category: "Mascara & Eyeliners", price: "₹599", description: "Dramatic volume and length for lashes", image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 24, name: "Waterproof Liner Pen", category: "Mascara & Eyeliners", price: "₹399", description: "Precise application with long-lasting wear", image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 25, name: "Curl & Hold Mascara", category: "Mascara & Eyeliners", price: "₹549", description: "Lifts and curls lashes all day", image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 26, name: "Gel Eyeliner Pot", category: "Mascara & Eyeliners", price: "₹449", description: "Smooth gel formula with intense color", image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 27, name: "Lash Primer Base", category: "Mascara & Eyeliners", price: "₹349", description: "Preps lashes for maximum mascara impact", image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    // Mascara & Eyeliners (4 items)
+    { id: 17, name: "Black Curl Mascara", category: "Mascara & Eyeliners", price: "₹449", description: "Dramatic curl and volume", image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 18, name: "Waterproof Eyeliner Pen", category: "Mascara & Eyeliners", price: "₹349", description: "Precise waterproof application", image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 19, name: "Kajal & Liner Duo", category: "Mascara & Eyeliners", price: "₹399", description: "Traditional kajal with modern liner", image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 20, name: "Everyday Mascara", category: "Mascara & Eyeliners", price: "₹299", description: "Natural length and definition", image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
 
-    // Makeup Tools (5 items)
-    { id: 28, name: "Professional Brush Set", category: "Makeup Tools", price: "₹999", description: "Complete 12-piece brush collection", image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 29, name: "Beauty Blender Duo", category: "Makeup Tools", price: "₹599", description: "Two makeup sponges for flawless blending", image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 30, name: "Kabuki Brush", category: "Makeup Tools", price: "₹399", description: "Soft kabuki brush for powder application", image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 31, name: "Precision Liner Brush", category: "Makeup Tools", price: "₹299", description: "Ultra-fine brush for detailed work", image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 32, name: "Contour Brush Set", category: "Makeup Tools", price: "₹699", description: "3 brushes for perfect contouring", image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    // Tools & Brushes (4 items)
+    { id: 21, name: "Blending Sponge", category: "Tools & Brushes", price: "₹299", description: "Soft makeup sponge for flawless blending", image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 22, name: "Blush Brush", category: "Tools & Brushes", price: "₹399", description: "Professional blush application brush", image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 23, name: "Dual-ended Eye Brush", category: "Tools & Brushes", price: "₹349", description: "Versatile eyeshadow application tool", image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 24, name: "Rosélush 3-Brush Mini Set", category: "Tools & Brushes", price: "₹599", description: "Essential brush trio for beginners", image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
 
-    // Accessories (5 items)
-    { id: 33, name: "Rose Gold Mirror", category: "Accessories", price: "₹799", description: "Elegant compact mirror with LED lights", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 34, name: "Velvet Makeup Pouch", category: "Accessories", price: "₹549", description: "Luxurious storage for your makeup essentials", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 35, name: "Nail Polish Trio", category: "Accessories", price: "₹499", description: "Three coordinating nail polish shades", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 36, name: "Hair Accessory Set", category: "Accessories", price: "₹399", description: "Beautiful clips and ties for styling", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 37, name: "Travel Organizer", category: "Accessories", price: "₹699", description: "Perfect for organizing makeup on the go", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" }
+    // Accessories (4 items)
+    { id: 25, name: "Mini Travel Mirror", category: "Accessories", price: "₹299", description: "Compact mirror with LED lights", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 26, name: "Pink Pouch", category: "Accessories", price: "₹399", description: "Elegant storage for makeup essentials", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 27, name: "Rose Nail Paint Set", category: "Accessories", price: "₹449", description: "Three coordinating rose nail colors", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 28, name: "Beauty Comb Case", category: "Accessories", price: "₹249", description: "Stylish comb with protective case", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" }
   ];
 
   const filteredProducts = products.filter(product => {
@@ -90,7 +81,7 @@ const Products = () => {
             Our Products
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Discover our complete collection of affordable luxury beauty products
+            Discover our handpicked collection of elegant and affordable beauty products
           </p>
         </div>
 
