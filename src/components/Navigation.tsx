@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Cart } from 'lucide-react';
+import { ShoppingCart } from 'lucide-react';
 
 interface NavigationProps {
   cartCount?: number;
@@ -37,7 +37,7 @@ const Navigation = ({ cartCount = 0 }: NavigationProps) => {
 
           {/* Cart Icon */}
           <Link to="/cart" className="relative p-2 hover:bg-blush-pink rounded-full transition-colors">
-            <Cart className="h-6 w-6 text-deep-plum" />
+            <ShoppingCart className="h-6 w-6 text-deep-plum" />
             {cartCount > 0 && (
               <span className="absolute -top-1 -right-1 bg-rose-gold text-white text-xs rounded-full h-5 w-5 flex items-center justify-center font-medium">
                 {cartCount}
