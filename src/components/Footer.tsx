@@ -10,10 +10,10 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <h3 className="font-playfair text-3xl font-bold text-rose-gold mb-4">
-              Glamistry
+              Rosélush
             </h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Where beauty meets comfort. We believe in affordable elegance and helping you express your unique style with confidence.
+              Rosélush is your go-to beauty destination for elegant and affordable makeup. Every product is handpicked to reflect your natural glow – with unique visuals, perfect pricing, and boutique-level charm.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-rose-gold/20 rounded-full flex items-center justify-center hover:bg-rose-gold transition-colors">
@@ -73,7 +73,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-600 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2025 Glamistry. All rights reserved. Made with 💕 for beauty lovers.
+            © 2025 Rosélush. All rights reserved. Made with 💕 for beauty lovers.
           </p>
         </div>
       </div>
