@@ -1,28 +1,32 @@
 
 import { ArrowUp } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const FeaturedCollections = () => {
   const collections = [
     {
       id: 1,
-      name: "Luxury Lipsticks",
-      description: "Rich, long-lasting colors that make a statement",
-      image: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-      price: "₹1,299"
+      name: "Ruby Velvet Matte",
+      description: "Deep red matte for bold statements",
+      image: "https://images.unsplash.com/photo-1631214540278-c3d6b6750d0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      price: "₹449",
+      productId: 4
     },
     {
-      id: 2,
-      name: "Eyeshadow Palettes",
-      description: "Stunning shades for every occasion",
-      image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2335&q=80",
-      price: "₹2,199"
+      id: 9,
+      name: "Rosé Romance Palette",
+      description: "Stunning rose and peach shades for every occasion",
+      image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      price: "₹499",
+      productId: 9
     },
     {
-      id: 3,
-      name: "Radiant Highlighters",
-      description: "Glow like never before with our signature highlighters",
-      image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80",
-      price: "₹899"
+      id: 15,
+      name: "Champagne Shine Highlighter",
+      description: "Glow like never before with our signature highlighter",
+      image: "https://images.unsplash.com/photo-1560070094-e1f2ddec4337?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      price: "₹450",
+      productId: 15
     }
   ];
 
@@ -41,14 +45,16 @@ const FeaturedCollections = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {collections.map((collection) => (
             <div key={collection.id} className="product-card group cursor-pointer">
-              <div className="relative overflow-hidden">
-                <img 
-                  src={collection.image}
-                  alt={collection.name}
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
+              <Link to={`/product/${collection.productId}`}>
+                <div className="relative overflow-hidden">
+                  <img 
+                    src={collection.image}
+                    alt={collection.name}
+                    className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+              </Link>
               
               <div className="p-6">
                 <h3 className="font-playfair text-2xl font-semibold text-deep-plum mb-2">
@@ -61,10 +67,13 @@ const FeaturedCollections = () => {
                   <span className="text-2xl font-bold text-rose-gold">
                     {collection.price}
                   </span>
-                  <button className="btn-primary flex items-center space-x-2">
-                    <span>Add to Cart</span>
+                  <Link 
+                    to={`/product/${collection.productId}`}
+                    className="btn-primary flex items-center space-x-2"
+                  >
+                    <span>View Details</span>
                     <ArrowUp className="h-4 w-4 rotate-45" />
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

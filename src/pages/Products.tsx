@@ -35,70 +35,70 @@ const Products = () => {
     },
     { 
       id: 2, 
-      name: "BoldBerry Gloss", 
-      category: "Lipsticks", 
-      price: "₹449", 
-      description: "Glossy berry red for bold statements", 
-      image: "https://images.unsplash.com/photo-1631214540278-c3d6b6750d0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-    },
-    { 
-      id: 3, 
-      name: "Coral Crush Satin", 
+      name: "Coral Crush Lipstick", 
       category: "Lipsticks", 
       price: "₹429", 
       description: "Coral peach with satin finish", 
       image: "https://images.unsplash.com/photo-1574745441045-25c1a2e61de1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
     { 
-      id: 4, 
-      name: "Mauve Bloom", 
+      id: 3, 
+      name: "Mauve Bloom Gloss", 
       category: "Lipsticks", 
       price: "₹399", 
-      description: "Soft mauve for daily wear", 
+      description: "Soft mauve gloss for daily wear", 
       image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+    },
+    { 
+      id: 4, 
+      name: "Ruby Velvet Matte", 
+      category: "Lipsticks", 
+      price: "₹449", 
+      description: "Deep red matte for bold statements", 
+      image: "https://images.unsplash.com/photo-1631214540278-c3d6b6750d0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
 
     // Foundations (4 items, ₹450-₹650)
     { 
       id: 5, 
-      name: "Soft Beige Foundation", 
+      name: "Light Beige Foundation", 
       category: "Foundations", 
-      price: "₹599", 
+      price: "₹450", 
       description: "Light coverage for fair skin tones", 
       image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
     { 
       id: 6, 
-      name: "Warm Tan Foundation", 
+      name: "Warm Tan Base", 
       category: "Foundations", 
-      price: "₹599", 
+      price: "₹550", 
       description: "Perfect for medium warm undertones", 
       image: "https://images.unsplash.com/photo-1522338140262-f46f5913618a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
     { 
       id: 7, 
-      name: "Golden Glow Foundation", 
+      name: "Golden Glow Coverage", 
       category: "Foundations", 
-      price: "₹650", 
+      price: "₹599", 
       description: "Rich golden tone with natural finish", 
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
     { 
       id: 8, 
-      name: "Deep Cocoa Foundation", 
+      name: "Deep Cocoa Matte", 
       category: "Foundations", 
       price: "₹650", 
       description: "Deep rich coverage for darker skin", 
       image: "https://images.unsplash.com/photo-1560472354-bb8565882c30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
 
-    // Eyeshadows (4 items, ₹350-₹600)
+    // Eyeshadows (4 items, ₹499-₹599)
     { 
       id: 9, 
-      name: "Rose Nude Palette", 
+      name: "Rosé Romance Palette", 
       category: "Eyeshadows", 
-      price: "₹549", 
-      description: "Soft rose and nude shades", 
+      price: "₹499", 
+      description: "Soft rose and peach shades palette", 
       image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
     { 
@@ -111,18 +111,18 @@ const Products = () => {
     },
     { 
       id: 11, 
-      name: "Sunset Glam Palette", 
+      name: "Glam Pop Palette", 
       category: "Eyeshadows", 
       price: "₹579", 
-      description: "Warm sunset-inspired colors", 
+      description: "Shimmery glam colors for special occasions", 
       image: "https://images.unsplash.com/photo-1607367716361-26a8eb36f0ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
     { 
       id: 12, 
-      name: "Everyday Matte Palette", 
+      name: "Daily Nude Set", 
       category: "Eyeshadows", 
-      price: "₹479", 
-      description: "Essential matte shades for daily wear", 
+      price: "₹520", 
+      description: "Essential nude shades for everyday wear", 
       image: "https://images.unsplash.com/photo-1561049933-f0de12770ac2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
 
@@ -131,7 +131,7 @@ const Products = () => {
       id: 13, 
       name: "Peach Pop Blush", 
       category: "Blush & Highlighters", 
-      price: "₹399", 
+      price: "₹350", 
       description: "Fresh peach flush for natural glow", 
       image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
@@ -139,7 +139,7 @@ const Products = () => {
       id: 14, 
       name: "Rose Beam Blush", 
       category: "Blush & Highlighters", 
-      price: "₹429", 
+      price: "₹380", 
       description: "Romantic rose shade with silky texture", 
       image: "https://images.unsplash.com/photo-1605288650173-57a40dd8cb0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
@@ -147,7 +147,7 @@ const Products = () => {
       id: 15, 
       name: "Champagne Shine Highlighter", 
       category: "Blush & Highlighters", 
-      price: "₹499", 
+      price: "₹450", 
       description: "Luminous champagne glow", 
       image: "https://images.unsplash.com/photo-1560070094-e1f2ddec4337?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
@@ -155,7 +155,7 @@ const Products = () => {
       id: 16, 
       name: "Moonlit Glow Combo", 
       category: "Blush & Highlighters", 
-      price: "₹599", 
+      price: "₹499", 
       description: "Blush and highlighter duo set", 
       image: "https://images.unsplash.com/photo-1609979715715-e6e12ad54e55?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
@@ -165,7 +165,7 @@ const Products = () => {
       id: 17, 
       name: "Black Curl Mascara", 
       category: "Mascara & Eyeliners", 
-      price: "₹449", 
+      price: "₹420", 
       description: "Dramatic curl and volume", 
       image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
@@ -173,7 +173,7 @@ const Products = () => {
       id: 18, 
       name: "Waterproof Eyeliner Pen", 
       category: "Mascara & Eyeliners", 
-      price: "₹349", 
+      price: "₹320", 
       description: "Precise waterproof application", 
       image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
@@ -181,7 +181,7 @@ const Products = () => {
       id: 19, 
       name: "Kajal & Liner Duo", 
       category: "Mascara & Eyeliners", 
-      price: "₹399", 
+      price: "₹380", 
       description: "Traditional kajal with modern liner", 
       image: "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
@@ -189,7 +189,7 @@ const Products = () => {
       id: 20, 
       name: "Everyday Mascara", 
       category: "Mascara & Eyeliners", 
-      price: "₹299", 
+      price: "₹280", 
       description: "Natural length and definition", 
       image: "https://images.unsplash.com/photo-1564171084394-1f7f9aa2c1b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
@@ -199,7 +199,7 @@ const Products = () => {
       id: 21, 
       name: "Blending Sponge", 
       category: "Tools & Brushes", 
-      price: "₹299", 
+      price: "₹250", 
       description: "Soft makeup sponge for flawless blending", 
       image: "https://images.unsplash.com/photo-1617626691157-5448a7f5f0d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
@@ -207,7 +207,7 @@ const Products = () => {
       id: 22, 
       name: "Blush Brush", 
       category: "Tools & Brushes", 
-      price: "₹399", 
+      price: "₹350", 
       description: "Professional blush application brush", 
       image: "https://images.unsplash.com/photo-1612817288484-6f916006741a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
@@ -215,7 +215,7 @@ const Products = () => {
       id: 23, 
       name: "Dual-ended Eye Brush", 
       category: "Tools & Brushes", 
-      price: "₹349", 
+      price: "₹300", 
       description: "Versatile eyeshadow application tool", 
       image: "https://images.unsplash.com/photo-1631214540278-c3d6b6750d0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
@@ -223,7 +223,7 @@ const Products = () => {
       id: 24, 
       name: "Rosélush 3-Brush Mini Set", 
       category: "Tools & Brushes", 
-      price: "₹599", 
+      price: "₹550", 
       description: "Essential brush trio for beginners", 
       image: "https://images.unsplash.com/photo-1615397349754-cfa2066a298e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
@@ -233,7 +233,7 @@ const Products = () => {
       id: 25, 
       name: "Mini Travel Mirror", 
       category: "Accessories", 
-      price: "₹299", 
+      price: "₹280", 
       description: "Compact mirror with LED lights", 
       image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
@@ -241,7 +241,7 @@ const Products = () => {
       id: 26, 
       name: "Pink Pouch", 
       category: "Accessories", 
-      price: "₹399", 
+      price: "₹350", 
       description: "Elegant storage for makeup essentials", 
       image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
@@ -249,7 +249,7 @@ const Products = () => {
       id: 27, 
       name: "Rose Nail Paint Set", 
       category: "Accessories", 
-      price: "₹449", 
+      price: "₹420", 
       description: "Three coordinating rose nail colors", 
       image: "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     },
@@ -257,11 +257,16 @@ const Products = () => {
       id: 28, 
       name: "Beauty Comb Case", 
       category: "Accessories", 
-      price: "₹249", 
+      price: "₹230", 
       description: "Stylish comb with protective case", 
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
     }
   ];
+
+  // Create a global products array that can be accessed by other components
+  if (typeof window !== 'undefined') {
+    (window as any).roselushProducts = products;
+  }
 
   const filteredProducts = products.filter(product => {
     const matchesCategory = selectedCategory === 'All' || product.category === selectedCategory;
@@ -272,9 +277,23 @@ const Products = () => {
 
   const handleAddToCart = (product: typeof products[0]) => {
     setCartCount(prev => prev + 1);
+    
+    // Store cart items in localStorage
+    const existingCart = JSON.parse(localStorage.getItem('roselushCart') || '[]');
+    const existingItem = existingCart.find((item: any) => item.id === product.id);
+    
+    if (existingItem) {
+      existingItem.quantity += 1;
+    } else {
+      existingCart.push({ ...product, quantity: 1 });
+    }
+    
+    localStorage.setItem('roselushCart', JSON.stringify(existingCart));
+    
     toast({
       title: "✔️ Item added to cart",
       description: `${product.name} (${product.price}) has been added to your cart`,
+      duration: 3000,
     });
   };
 
