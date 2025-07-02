@@ -23,9 +23,9 @@ HTML5
 
 CSS3
 
-JavaScript (vanilla)
+JavaScript
 
-Hosted via GitHub Pages / Lovable export
+Hosted via GitHub Pages
 
 🚀 Goal
 To create a wow-worthy shopping experience that reflects elegance, usability, and brand consistency for a premium yet affordable makeup brand.
